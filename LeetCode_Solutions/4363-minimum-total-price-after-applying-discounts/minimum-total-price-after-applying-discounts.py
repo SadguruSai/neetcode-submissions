@@ -11,3 +11,7 @@ class Solution:
             else:
                 ans+=prices[i]
         return ans
+
+
+            
+
