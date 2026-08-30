@@ -5,11 +5,11 @@ class Solution:
         rank=[1]*n
         res=n
         def find(n1):
-            res=n1
-            while res!=par[res]:
-                par[res]=par[par[res]]
-                res=par[res]
-            return res
+            node=n1
+            while node!=par[node]:
+                par[node]=par[par[node]]
+                node=par[node]
+            return node
         
         def union(n1,n2):
             p1,p2=find(n1),find(n2)
